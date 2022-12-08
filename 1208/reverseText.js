@@ -8,3 +8,4 @@ function reverse(text) {
 
 console.log(reverse("I love Money"));
 console.log(reverse("Hello, Good Bye"));
+console.log(reverse("문자열 거꾸로 출력하기."))
