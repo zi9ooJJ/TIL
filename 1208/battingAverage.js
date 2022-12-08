@@ -1,3 +1,7 @@
+/* 지시사항
+1. 0이상의 정수인 타수와 안타를 입력받으세요.
+2. 구한 타율을 할푼리로 출력하세요. 할푼리 아래의 소수점은 모두 버림하며 값이 0인 경우 생략합니다. */
+
 const readline = require('readline');
 
 const rl = readline.createInterface({
