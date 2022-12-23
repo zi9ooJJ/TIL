@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <strong> Name </strong>
+        <div id="name"> ? </div>
+        <strong> Email </strong>
+        <div id="email"> ? </div>
+        <strong> Update Date </strong>
+        <div id="update_date"> ? </div>
+      </div>
+    <script> 
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const updateDate = document.getElementById("update_date");
+
+        const editData = { "first_name": "White", "last_name": "Rabbit" , "email": "alice@elice.io" };
+
+        axios.put('https://reqres.in/api/users/2', editData)
+            .then(res => {
+                name.innerHTML = res.data.first_name + " " + res.data.last_name;
+                email.innerHTML = res.data.email;
+                updateDate.innerHTML = new Date();
+            })
+        // 만약 데이터의 일부만 수정하고 싶으면 axios.patch() 이용 가능.
+    </script>
+</body>
+</html>
