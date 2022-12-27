@@ -1,0 +1,18 @@
+{
+  "name": "1227",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "welcome": "cowsay \"Welcome\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "cowsay": "^1.5.0"
+  }
+}
