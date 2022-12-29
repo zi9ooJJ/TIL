@@ -6,7 +6,7 @@ Set을 Array로 변경할 때는 spread 연산자를 사용하여 [...set]처럼
 
 const arr = ['amy', 'joey', 'lucy', 'amy', 'lucy', 'camila'];
 
-// // case 1 - spread poerator 사용
+// // case 1 - spread operator 사용
 const set = new Set(arr);
 const newArr1 = [...set];
 console.log(newArr1); // [ 'amy', 'joey', 'lucy', 'camila' ]
